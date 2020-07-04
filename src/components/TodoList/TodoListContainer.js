@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { TodoList } from './TodoList'
+import { TodoContext } from '../../state'
 
 export function TodoListContainer() {
-  return <TodoList items={[]} />
+  const { todoState } = useContext(TodoContext)
+
+  return <TodoList items={todoState} />
 }
