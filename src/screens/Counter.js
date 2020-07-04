@@ -24,6 +24,7 @@ function reducer(state, action) {
 
 export function Counter({ initialCount }) {
   const [state, dispatch] = useReducer(reducer, initialCount, initState)
+  // or useReducer(reducer, { count: initialCount })
 
   function increment() {
     dispatch({ type: 'increment' })
