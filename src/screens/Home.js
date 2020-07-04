@@ -3,11 +3,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
 import './Home.css'
-import {
-  TodoListContainer,
-  TodoFormContainer,
-  TodoTotalContainer,
-} from '../components'
+import { TodoListContainer, TodoFormContainer } from '../components'
 
 export function Home() {
   return (
@@ -18,9 +14,6 @@ export function Home() {
       <Row>
         <Col>
           <div className="home__todolist-container">
-            <div className="home__todototal-container">
-              <TodoTotalContainer />
-            </div>
             <TodoListContainer />
           </div>
         </Col>

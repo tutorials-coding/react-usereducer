@@ -3,7 +3,6 @@ import React from 'react'
 import { TodoItem } from './TodoItem'
 
 export function TodoItemContainer({ item }) {
-  const todoItemsState = []
 
   const editTodoItemText = (value) => {}
 
@@ -20,13 +19,4 @@ export function TodoItemContainer({ item }) {
       onTextUpdate={editTodoItemText}
     />
   )
-}
-
-function getItemsWithUpdateItem(items, item) {
-  return items.map((_item) => {
-    if (_item.id === item.id) {
-      return item
-    }
-    return _item
-  })
 }
